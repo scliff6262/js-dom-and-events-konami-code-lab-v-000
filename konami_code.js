@@ -4,5 +4,14 @@ function init() {
   // Write your JavaScript code inside the init() function
   let counter = 0
 
-  document.addEventListener("keydown")
+  function konami(e){
+    if (parseInt(e.which) === code[counter]) {
+      counter ++
+      if (counter === code.length){
+        alert("KONAMI TSUNAMI")
+      }
+    }
+  }
+
+  document.addEventListener("keydown", function(e))
 }
