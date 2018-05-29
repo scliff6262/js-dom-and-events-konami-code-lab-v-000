@@ -8,7 +8,7 @@ function init() {
     if (parseInt(e.which) === code[counter]) {
       counter++
       if (counter === code.length){
-        alert("KONAMI TSUNAMI")
+        window.alert("KONAMI TSUNAMI")
       }
     } else {
       counter = 0
