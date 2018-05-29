@@ -5,7 +5,7 @@ function init() {
   let counter = 0
 
   function konami(e){
-    if (parseInt(e.which) === code[counter]) {
+    if (parseInt(e.detail || e.which) === code[counter]) {
       counter++
       if (counter === code.length){
         window.alert("KONAMI TSUNAMI")
