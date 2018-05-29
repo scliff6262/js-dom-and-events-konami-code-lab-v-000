@@ -6,10 +6,12 @@ function init() {
 
   function konami(e){
     if (parseInt(e.which) === code[counter]) {
-      counter ++
+      counter++
       if (counter === code.length){
         alert("KONAMI TSUNAMI")
       }
+    } else {
+      counter = 0
     }
   }
 
